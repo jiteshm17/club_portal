@@ -1,4 +1,46 @@
-.club-card {
-    background-color: lightgray;
-    
+.card-section {
+    background:lightgray;
+}
+
+.card-club {
+
+    perspective: 1500px;
+    -moz-perspective: 1500px;
+    position: relative;
+    height: 500px;
+
+}
+
+
+.card-club-both {
+    border-radius: 4px;
+    box-shadow: 0 105px 400px rgba(0,0,0,.15);
+    height: 500px;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.card-club-front {
+    background-color: #fff;
+}
+
+.card-club-back {
+    transform: rotateY(180deg);
+}
+
+
+.card-club:hover .card-club-front {
+    transform: rotateY(180deg);
+}
+
+.card-club:hover .card-club-back {
+    transform: rotateY(0deg);
+}
+
+.card-club-back-1 {
+    background-image:linear-gradient(to right bottom,#ffb900,#ff7730);
 }

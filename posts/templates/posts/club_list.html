@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,14 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">    
+    <link rel="stylesheet" href="{% static 'posts/club_list.css' %}">
     <title>Document</title>
 </head>
 <body>
 
-    <section class="club-card">
+    <section class="card-section">
         <div class="row">
             <div class="col l3">
-                Col 1 
+                <div class="card-club">
+                    <div class="card-club-both card-club-front">
+                        Card Text Here
+                    </div>
+                    <div class="card-club-both card-club-back card-club-back-1">
+                        Back Text Here
+                    </div>
+                </div> 
             </div>
             <div class="col l3">
                 Col 2
